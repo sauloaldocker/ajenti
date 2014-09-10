@@ -1,6 +1,6 @@
 docker stop ajenti; docker rm ajenti
 
-docker run -d --name ajenti -p 127.0.1.1:8001:8000 -v $PWD/data:/etc/ajenti crosbymichael/ajenti
+docker run -d --name ajenti -p 127.0.1.1:8001:8000 -v /home/saulo/data/ajenti:/etc/ajenti crosbymichael/ajenti
 
 #docker.io run -it --rm --name ajentit -v $PWD/data:/etc/ajenti crosbymichael/ajenti
 
