@@ -1,6 +1,9 @@
 docker stop ajenti; docker rm ajenti
 
-docker run -d --name ajenti -p 127.0.1.1:8001:8000 -v /home/saulo/data/ajenti:/etc/ajenti crosbymichael/ajenti
+SRC=$HOME/data/docker
+SRC_DATA=$SRC/ajenti
+
+docker run -d --name ajenti -p 127.0.1.1:8001:8000 -v $SRC_DATA:/etc/ajenti crosbymichael/ajenti
 
 #docker.io run -it --rm --name ajentit -v $PWD/data:/etc/ajenti crosbymichael/ajenti
 
